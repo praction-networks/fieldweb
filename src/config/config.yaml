@@ -1,0 +1,33 @@
+environment: development
+
+server:
+  port: 3000
+
+mongodb:
+  host: "127.0.0.1"
+  port: 27017
+  tlsEnabled: false
+  database: "fieldweb"
+  username: "praction"
+  password: "Lcmanager123"
+
+casbin:
+  host: "127.0.0.1"
+  port: 27017
+  tlsEnabled: false
+  database: "casbin"
+  username: "casbin"
+  password: "Lcmanager123"
+
+logger:
+  logLevel: debug
+  console: true
+  elkEnabled: false
+  elkHost: "127.0.0.1"
+  elkPort: "9200"
+  elkSearchIndex: "fieldweb"
+
+jwt:
+  secret: "zzDodPoGnVsmEK7WoJ2jZS87PqGBZmrSEcCmZ6gDv7FpWmstCSAaypP4kBvfAMprgiqAizvxNEwJX2SbQVn4baXCqnGhY93Y8JeM"
+  expiration: "24h"
+
